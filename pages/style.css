@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Inter&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Inter&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&family=Roboto&display=swap');
+
+
+.grey-color{
+    color: rgba(7, 7, 7, 0.75);
+}
+
+.white-color{
+    color: #FFFFFF;
+}
+.inter-24px{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+}
+.roboto-32px{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+
+    letter-spacing: 0.07em;
+}
+.text-center{
+    text-align: center;
+}
+.padding-top{
+    padding-top: 30px;
+}
+.bg-img{
+    background: url(../assets/img/background.png) no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    background-size: 100% 100%;
+    /* Современные браузеры */
+}
+
+.header{
+    margin: auto;
+    padding: 36px 53px 35px 54px;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.horizontal-line{
+    border: 1px solid #663C3C;
+}
+
+
+.main{
+    display: flex;
+}
+.profile-photo{
+    max-width: 270px;
+
+    margin: auto;
+}
+
+.info-block{
+    max-width:450px;/*Максимальная ширина при больших разрешениях*/
+    min-width:200px;/*Минимальная ширина при маленьких разрешениях*/
+    width:auto;/*Ширина в зависимости от разрешения экрана*/
+}
+
+.info-title{
+    padding-bottom: 16px;
+}
+
+.info-text{
+    padding-bottom: 25px;
+}
+
+.skills{
+    line-height: 200%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skill-img{
+    padding-top: 15px;
+    max-width: 180px;
+    max-height: 220px;
+}
+
+.main-block{
+    max-width: 830px;
+    width: 100%;
+}
+.img-CV{
+    max-width: 654.05px;
+
+    min-width: 200px;
+ 
+    width: 100%;
+ 
+   padding: 67px 0 148px 20px;
+}
+
+
+
+  .vertical-line{
+    border: 1px solid #663C3C;
+  }
+
+  .block{
+      margin-left: 35px;
+    background: url(../assets/img/block.png) no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: auto;
+    background-size: 100% 100%;
+    /* Современные браузеры */
+  }
+
+  .main-text-column{
+    line-height: 200%;
+  }
+
+  .flex{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 230px 0;
+  }
+
+  .main-text{
+      padding: 35px 0 50px 34px;
+  }
+
+  .footer{
+    background-color: #EFE9E9;
+    max-width: 100%;
+    min-width: 100px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-content{
+      padding: 50px 54px 0 54px;
+  }
+
+  .my-photo{
+      display: none;
+  }
+  .footer-icon{
+      padding-top: 40px;
+  }
+  
+
+  @media (max-width: 1200px) {
+    .img-CV{
+        padding-left: 0;
+    }
+    .main-title{
+        font-size: 2.5vw;
+      }
+      .block{
+          margin-left: 0;
+      }
+    .flex{
+        padding-bottom: 100px;
+    }
+    .main-text{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+      .profile-photo{
+          display: none;
+      }
+
+      .nav{
+          display: none;
+      }
+      .main{
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      .info-block{
+          margin: auto;
+      }
+      .vertical-line{
+        border: none;
+      }
+      .main{
+          padding: 0 30px 0 30px;
+      }
+      .main-text{
+          font-size: 0.9vh;
+      }
+      .info-text{
+        font-size: 0.9vh;
+      }
+      .footer-content{
+          max-width: 300px;
+          min-width: 100px;
+          width: auto;
+          padding-left: 0;
+      }
+      .footer-text{
+          font-size: 0.7vh;
+          
+      }
+      .footer-icon{
+          margin: auto;
+          max-width: 210px;
+          max-height: 85px;
+          min-width: 50px;
+          min-height: 20px;
+          width: auto;
+      }
+  }
+
+  @media (max-width: 320px) {
+      .flex{
+          display: flex;
+          flex-direction: column;
+      }
+      .block{
+          margin: auto;
+      }
+      .info-text{
+          font-size: 17px;
+      }
+      .profile-photo{
+        max-width: 200px;
+        margin: auto;
+    }
+    .skill-img{
+        padding-top: 20px;
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .footer-text{
+        font-size: 0.4vh;
+        
+    }
+    .footer-icon{
+        padding-top: 70px;
+        padding-left: 0;
+        width: 100px;
+    }
+}
